@@ -84,9 +84,10 @@ function updatePasswordStrength() {
 }
 
 togglePassword.addEventListener("click", function() {
-  const type = password.getAttribute("type") === "password" ? "text" : "password";
-  password.setAttribute("type", type);
-  this.textContent = type === "password" ? "👁️" : "👁️‍🗨️"
+    console.log("Toggle clicked"); // Debugging
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    this.textContent = type === "password" ? "👁️" : "👁️‍🗨️";
 });
 
 form.addEventListener('submit', function(event) {
