@@ -1,4 +1,3 @@
-alert('Welcome to signup page please fill up the following and submit the form to register yourself');
 const form = document.getElementById('registrationForm');
 const inputs = ['username', 'email', 'password', 'confirmPassword'].map(id => document.getElementById(id));
 const errors = ['usernameError', 'emailError', 'passwordError', 'confirmPasswordError'].map(id => document.getElementById(id));
